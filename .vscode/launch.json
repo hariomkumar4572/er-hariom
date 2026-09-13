@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Website in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "file": "/index.html"
+    },
+    {
+      "name": "Run Website in Edge",
+      "type": "msedge",
+      "request": "launch",
+      "file": "/index.html"
+    }
+  ]
+}

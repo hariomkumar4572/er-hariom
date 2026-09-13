@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#080E1A" />
+    </linearGradient>
+    <linearGradient id="techGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <radialGradient id="centerLight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.25" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0A0F1D" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glowFilt" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Circle -->
+  <circle cx="200" cy="200" r="196" fill="url(#avatarBg)" />
+  <circle cx="200" cy="200" r="196" fill="url(#centerLight)" />
+
+  <!-- Outer Orbit Tech Rings -->
+  <circle cx="200" cy="200" r="184" stroke="url(#techGlow)" stroke-width="2" stroke-dasharray="16 10 6 10" stroke-opacity="0.65" />
+  <circle cx="200" cy="200" r="170" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.35" />
+  <circle cx="200" cy="200" r="156" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4 6" stroke-opacity="0.25" />
+
+  <!-- Constellation Orbit Nodes -->
+  <circle cx="350" cy="130" r="5" fill="#10B981" filter="url(#glowFilt)" />
+  <circle cx="50" cy="270" r="4.5" fill="#3B82F6" filter="url(#glowFilt)" />
+  <circle cx="200" cy="18" r="3.5" fill="#06B6D4" />
+  <circle cx="290" cy="330" r="3" fill="#10B981" opacity="0.7" />
+
+  <!-- Engineer Silhouette -->
+  <g id="figure" opacity="0.95">
+    <!-- Head -->
+    <circle cx="200" cy="142" r="50" fill="#1E293B" stroke="url(#techGlow)" stroke-width="2.5" />
+    <!-- AI Visor / Accent Line -->
+    <path d="M182 142 Q200 148 218 142" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Shoulders & Coat -->
+    <path d="M106 288 C106 215, 146 190, 200 190 C254 190, 294 215, 294 288 Z" fill="#1E293B" stroke="url(#techGlow)" stroke-width="2.5" />
+
+    <!-- Modern Lapel Lines -->
+    <path d="M174 193 L200 242 L226 193" stroke="url(#techGlow)" stroke-width="2" fill="none" stroke-linejoin="round" />
+    <path d="M200 242 L200 288" stroke="#10B981" stroke-width="2" stroke-dasharray="3 3" />
+
+    <!-- AI Engineer Chest Badge -->
+    <rect x="187" y="252" width="26" height="18" rx="5" fill="#0B132B" stroke="#10B981" stroke-width="1.5" />
+    <text x="200" y="265" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="800" font-size="10" fill="#10B981" letter-spacing="0.5">AI</text>
+  </g>
+
+  <!-- Futuristic Monogram Banner -->
+  <g transform="translate(200, 342)">
+    <rect x="-96" y="-18" width="192" height="34" rx="17" fill="#070D1A" stroke="url(#techGlow)" stroke-width="1.8" />
+    <text x="0" y="4" text-anchor="middle" font-family="'Poppins', system-ui, sans-serif" font-weight="700" font-size="12" fill="#F8FAFC" letter-spacing="1.5">ER. HARIOM RAY</text>
+  </g>
+</svg>

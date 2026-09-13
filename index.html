@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Er. Hariom Kumar Ray | CSE & AI Engineer</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Personal portfolio and digital profile of Er. Hariom Kumar Ray — Computer Science & Artificial Intelligence Engineer. Building with Technology. Thinking Beyond Boundaries.">
+  <meta name="keywords" content="Er. Hariom Kumar Ray, Hariom Ray, AI Engineer, Machine Learning, Computer Science, GEC Munger, Portfolio, Mushibat Healthcare">
+  <meta name="author" content="Er. Hariom Kumar Ray">
+  <meta property="og:title" content="Er. Hariom Kumar Ray | CSE & AI Engineer">
+  <meta property="og:description" content="Building with Technology. Thinking Beyond Boundaries. Explore the profile, projects, and vision of Er. Hariom Kumar Ray.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hariomray.me/">
+  <meta property="og:image" content="assets/avatar-placeholder.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#070B14">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Poppins & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Tech Grid -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- ==========================================
+       STICKY NAVBAR
+       ========================================== -->
+  <header class="navbar" id="mainNav">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Er. Hariom Kumar Ray Home">
+        <div class="brand-badge">HR</div>
+        <div class="brand-info">
+          <span class="brand-name">
+            Er. Hariom Kumar Ray
+            <span class="brand-verified" title="Verified Engineer Profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/>
+              </svg>
+            </span>
+          </span>
+          <span class="brand-role">CSE & AI Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#vision" class="nav-link">Vision</a>
+      </nav>
+
+      <a href="#connect" class="nav-cta">
+        <span>Connect</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay & Drawer -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav" id="mobileNav">
+    <div>
+      <div class="mobile-header">
+        <div class="nav-brand">
+          <div class="brand-badge">HR</div>
+          <div class="brand-info">
+            <span class="brand-name">Er. Hariom</span>
+            <span class="brand-role">CSE & AI Engineer</span>
+          </div>
+        </div>
+        <button class="mobile-close-btn" id="closeNavBtn" aria-label="Close Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-links">
+        <a href="#hero" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          Home
+        </a>
+        <a href="#about" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"></circle><path d="M5.5 21a8.38 8.38 0 0 1 13 0"></path></svg>
+          About
+        </a>
+        <a href="#education" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+          Education
+        </a>
+        <a href="#skills" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Skills
+        </a>
+        <a href="#projects" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          Projects
+        </a>
+        <a href="#experience" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          Experience
+        </a>
+        <a href="#vision" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          Vision
+        </a>
+        <a href="#connect" class="mobile-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Let's Connect
+        </a>
+      </nav>
+    </div>
+
+    <div class="mobile-footer">
+      <p class="mobile-footer-tagline">Building with Technology.<br>Thinking Beyond Boundaries.</p>
+      <a href="#connect" class="btn btn-primary" style="width:100%; justify-content:center;">Get in Touch</a>
+    </div>
+  </aside>
+
+  <!-- Mobile Instagram Bio Quick Action Bar -->
+  <div class="container bio-quick-bar">
+    <div class="bio-card-preview">
+      <div class="bio-status">
+        <span class="status-dot"></span>
+        <span>Instagram Profile Hub</span>
+      </div>
+      <a href="#connect" class="bio-connect-btn">
+        <span>Connect</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION (First screen impact)
+         ========================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="hero-status-pill reveal-init">
+            <span class="status-dot"></span>
+            <span>Open for Projects &amp; Internships</span>
+          </div>
+
+          <!-- Name & Title -->
+          <h1 class="hero-name reveal-init reveal-delay-1">
+            <span class="gradient-text">Er. Hariom</span> Kumar Ray
+          </h1>
+
+          <div class="hero-subtitle reveal-init reveal-delay-2">
+            Computer Science &amp; Artificial Intelligence Engineer
+          </div>
+
+          <!-- Triple Tag Badges -->
+          <div class="hero-tags-bar reveal-init reveal-delay-2">
+            <span class="hero-tag">Engineering Student</span>
+            <span class="hero-tag-divider">•</span>
+            <span class="hero-tag">AI/ML Enthusiast</span>
+            <span class="hero-tag-divider">•</span>
+            <span class="hero-tag hero-tag-special">Future Entrepreneur</span>
+          </div>
+
+          <!-- Short Introduction -->
+          <p class="hero-intro reveal-init reveal-delay-3">
+            “I'm a Computer Science &amp; Artificial Intelligence engineering student passionate about technology, artificial intelligence, problem solving and building solutions for real-world problems.”
+          </p>
+
+          <!-- Personal Tagline Quote -->
+          <div class="hero-tagline-quote reveal-init reveal-delay-3">
+            “Building with Technology. Thinking Beyond Boundaries.”
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions reveal-init reveal-delay-4">
+            <a href="#about" class="btn btn-primary">
+              <span>Explore My Profile</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#connect" class="btn btn-secondary">
+              <span>Connect With Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Photo Showcase -->
+        <div class="hero-visual reveal-init reveal-delay-2">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring-glow"></div>
+            
+            <div class="avatar-glass-frame">
+              <!-- 
+                ============================================================
+                HOW TO USE YOUR OWN PHOTO:
+                Place your photo in the assets/ folder (e.g., assets/hariom.jpg)
+                and update the src attribute below to src="assets/hariom.jpg".
+                ============================================================
+              -->
+              <img src="profile.jbg.jpeg" alt="Er. Hariom Kumar Ray - Computer Science & AI Engineer" class="avatar-img" id="profileAvatarImg" onerror="this.src='assets/avatar-placeholder.svg'" loading="eager">
+            </div>
+
+            <!-- Floating Quick Badges -->
+            <div class="float-badge float-badge-ai">
+              <div class="badge-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                  <path d="M12 12L2.5 7.5"></path>
+                  <path d="M12 12v10"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-text-top">Domain</div>
+                <div class="badge-text-bottom">AI &amp; ML Focus</div>
+              </div>
+            </div>
+
+            <div class="float-badge float-badge-status">
+              <div class="badge-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-text-top">Status</div>
+                <div class="badge-text-bottom">7th Semester CSE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUICK INTRODUCTION ("Hello, I'm Hariom 👋")
+         ========================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-card-main reveal-init">
+            <h2 class="intro-greeting">
+              Hello, I'm <span class="gradient-emerald">Hariom</span> 👋
+            </h2>
+            <p class="intro-paragraph">
+              “I am an engineering student pursuing B.Tech in Computer Science &amp; Engineering with Artificial Intelligence. I enjoy learning about programming, AI/ML and technology while working on practical projects that can solve real-world problems.”
+            </p>
+            <div class="meta-subtext">
+              Committed to combining rigorous algorithmic problem-solving with cutting-edge artificial intelligence systems to engineer scalable, high-impact digital products.
+            </div>
+          </div>
+
+          <div class="intro-meta-grid reveal-init reveal-delay-2">
+            <!-- Currently Card -->
+            <div class="meta-item-card">
+              <div class="meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="meta-content-wrap">
+                <span class="meta-label">Currently</span>
+                <span class="meta-value">7th Semester</span>
+                <span class="meta-subtext">Final Year Engineer</span>
+              </div>
+            </div>
+
+            <!-- Branch Card -->
+            <div class="meta-item-card">
+              <div class="meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="meta-content-wrap">
+                <span class="meta-label">Branch</span>
+                <span class="meta-value">CSE — AI</span>
+                <span class="meta-subtext">Artificial Intelligence</span>
+              </div>
+            </div>
+
+            <!-- College Card -->
+            <div class="meta-item-card">
+              <div class="meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M6 7V3h12v4M9 11h2M9 15h2M13 11h2M13 15h2"/></svg>
+              </div>
+              <div class="meta-content-wrap">
+                <span class="meta-label">College</span>
+                <span class="meta-value">GEC, Munger</span>
+                <span class="meta-subtext">Govt. Engineering College</span>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="meta-item-card">
+              <div class="meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="meta-content-wrap">
+                <span class="meta-label">Based in</span>
+                <span class="meta-value">Bihar, India</span>
+                <span class="meta-subtext">Available Globally</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section class="section" id="education">
+      <div class="container education-container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Academic Foundation
+          </div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">Pursuing formal engineering excellence in Computer Science and specialized Artificial Intelligence.</p>
+        </div>
+
+        <div class="education-timeline-card reveal-init reveal-delay-1">
+          <div class="edu-header">
+            <div>
+              <h3 class="edu-degree">B.Tech — Computer Science &amp; Engineering (Artificial Intelligence)</h3>
+              <div class="edu-college">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M6 7V3h12v4M9 11h2M9 15h2M13 11h2M13 15h2"/></svg>
+                Government Engineering College, Munger
+              </div>
+            </div>
+            <div class="edu-badge-current">
+              <span class="status-dot"></span>
+              Currently in 7th Semester
+            </div>
+          </div>
+
+          <p style="color:var(--text-secondary); line-height: 1.7;">
+            Undergraduate curriculum focused on core computer science foundations, algorithm design, intelligent systems, deep neural networks, operating systems, and data engineering.
+          </p>
+
+          <div class="edu-details-list">
+            <div class="edu-detail-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Specialization: Artificial Intelligence</span>
+            </div>
+            <div class="edu-detail-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Degree: Bachelor of Technology (B.Tech)</span>
+            </div>
+            <div class="edu-detail-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Institution: GEC Munger, Bihar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TECHNICAL SKILLS SECTION (No Fake %)
+         ========================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Competencies &amp; Tools
+          </div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Core languages, computer science foundations, systems, and intelligent technologies.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card reveal-init reveal-delay-1">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Python</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>C</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-category-card reveal-init reveal-delay-2">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">AI &amp; Machine Learning</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Machine Learning</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Sentiment Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core CS & Engineering -->
+          <div class="skill-category-card reveal-init reveal-delay-3">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="skill-cat-title">Core Computer Science</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Data Structures &amp; Algorithms</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Object-Oriented Programming</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Operating Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Backend -->
+          <div class="skill-category-card reveal-init reveal-delay-4">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Data &amp; Databases</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>SQL</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-dot"></span>
+                <span>Relational Modeling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION (Featured: Mushibat Healthcare)
+         ========================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Innovations &amp; Builds
+          </div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Engineered solutions solving real societal bottlenecks through modern digital architecture.</p>
+        </div>
+
+        <!-- Featured Project: Mushibat Healthcare -->
+        <div class="project-card-featured reveal-init">
+          <div class="project-badge-top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Featured Healthcare Platform
+          </div>
+
+          <h3 class="project-title">Mushibat Healthcare</h3>
+
+          <p class="project-description">
+            “Mushibat Healthcare is a healthcare appointment platform designed to make hospital appointments easier and reduce unnecessary waiting time for patients.”
+          </p>
+
+          <div class="project-features-title">Core System Architecture &amp; Features:</div>
+
+          <div class="project-features-grid">
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+              <span class="feature-name">Hospital Search</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+              </div>
+              <span class="feature-name">Doctor Selection</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <span class="feature-name">Appointment Booking</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <span class="feature-name">Patient Details</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </div>
+              <span class="feature-name">Emergency / Normal Appointment</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="feature-name">Digital Appointment Information</span>
+            </div>
+          </div>
+
+          <div class="project-action-row">
+            <!-- Project Link -->
+            <a href="#projects" class="btn btn-primary" onclick="alert('Mushibat Healthcare is organized in this repository under mushibat-healthcare.'); return false;">
+              <span>View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <!-- Interactive Details Modal Trigger -->
+            <button class="btn btn-secondary" id="openProjectModalBtn">
+              <span>Project Details</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </button>
+          </div>
+        </div>
+
+        
+        <!-- Featured Project 2: AI Breast Cancer Detection -->
+        <div class="project-card-featured reveal-init" style="margin-top: 36px;">
+          <div class="project-badge-top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+            AI &amp; Biomedical Machine Learning
+          </div>
+
+          <h3 class="project-title">AI-Based Breast Cancer Detection and Risk Classification</h3>
+
+          <p class="project-description">
+            “An advanced medical diagnostic intelligence system utilizing machine learning algorithms to accurately classify cellular biopsy samples into benign or malignant tumors, providing clinical risk stratification for early-stage intervention.”
+          </p>
+
+          <div class="project-features-title">Core System Capabilities &amp; ML Architecture:</div>
+
+          <div class="project-features-grid">
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <span class="feature-name">Biopsy Feature Extraction</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <span class="feature-name">Benign vs Malignant Classification</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <span class="feature-name">Risk Tier Stratification</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <span class="feature-name">High Accuracy Analytics</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="feature-name">Predictive Decision Support</span>
+            </div>
+
+            <div class="feature-item-card">
+              <div class="feature-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+              </div>
+              <span class="feature-name">Diagnostic Reporting</span>
+            </div>
+          </div>
+
+          <div class="project-action-row">
+            <a href="https://github.com/hariomkumar4572" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>View On GitHub</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <span class="skill-chip" style="margin-left:8px;">Python • Scikit-Learn • Machine Learning • Data Modeling</span>
+          </div>
+        </div>
+
+        <!-- 
+          ============================================================
+          ADD FUTURE PROJECTS HERE:
+          Duplicate the project-card-featured container above.
+          ============================================================
+        -->
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE & CERTIFICATIONS SECTION
+         ========================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            Industry &amp; Research Credentials
+          </div>
+          <h2 class="section-title">Experience &amp; Certifications</h2>
+          <p class="section-desc">Factual internships, research contributions, and recognized technical certifications.</p>
+        </div>
+
+        <div class="exp-grid">
+          <!-- AI-Based Breast Cancer Detection Card -->
+          <div class="exp-card reveal-init">
+            <div>
+              <span class="exp-card-type type-internship">Machine Learning Project</span>
+              <h3 class="exp-org">AI &amp; Healthcare Diagnostics</h3>
+              <div class="exp-title">AI-Based Breast Cancer Detection and Risk Classification Using Machine Learning</div>
+            </div>
+            <div class="exp-topic-box">
+              <div class="exp-topic-label">Core Implementation</div>
+              <div class="exp-topic-val">Malignancy Prediction, Feature Engineering &amp; Clinical Risk Stratification</div>
+            </div>
+          </div>
+          <!-- IIIT Bhagalpur Card -->
+          <div class="exp-card reveal-init reveal-delay-1">
+            <div>
+              <span class="exp-card-type type-internship">Research Internship</span>
+              <h3 class="exp-org">IIIT Bhagalpur</h3>
+              <div class="exp-title">Research Paper Internship</div>
+            </div>
+            <div class="exp-topic-box">
+              <div class="exp-topic-label">Research Topic</div>
+              <div class="exp-topic-val">Sentiment Analysis of Social Media</div>
+            </div>
+          </div>
+
+          <!-- TING Works LLP Mumbai Card -->
+          <div class="exp-card reveal-init reveal-delay-2">
+            <div>
+              <span class="exp-card-type type-internship">Industry Internship</span>
+              <h3 class="exp-org">TING Works LLP</h3>
+              <div class="exp-title">Internship Experience</div>
+            </div>
+            <div class="exp-topic-box">
+              <div class="exp-topic-label">Location</div>
+              <div class="exp-topic-val">Mumbai, India</div>
+            </div>
+          </div>
+
+          <!-- Cisco Networking Academy Card -->
+          <div class="exp-card reveal-init reveal-delay-3">
+            <div>
+              <span class="exp-card-type type-cert">Global Certification</span>
+              <h3 class="exp-org">Cisco Networking Academy</h3>
+              <div class="exp-title">Certification</div>
+            </div>
+            <div class="exp-topic-box">
+              <div class="exp-topic-label">Domain</div>
+              <div class="exp-topic-val">Computer Networks &amp; Systems</div>
+            </div>
+          </div>
+
+          <!-- Codec Technology Card -->
+          <div class="exp-card reveal-init reveal-delay-4">
+            <div>
+              <span class="exp-card-type type-cert">Technical Certification</span>
+              <h3 class="exp-org">Codec Technology</h3>
+              <div class="exp-title">Web Development Certification</div>
+            </div>
+            <div class="exp-topic-box">
+              <div class="exp-topic-label">Domain</div>
+              <div class="exp-topic-val">Web Engineering &amp; Modern Frameworks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CURRENTLY SECTION ("What I'm Doing Now")
+         ========================================== -->
+    <section class="section" id="currently">
+      <div class="container">
+        <div class="currently-box reveal-init">
+          <div class="currently-header">
+            <span class="beacon-pulse"></span>
+            <h2 class="currently-title">What I'm Doing Now</h2>
+          </div>
+
+          <p class="currently-text">
+            “Currently developing my technical skills, working on projects and exploring AI/ML, programming and backend development.”
+          </p>
+
+          <div class="currently-tags-container">
+            <div class="currently-tag-card">
+              <div class="tag-badge-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                Learning
+              </div>
+              <div class="tag-badge-content">
+                AI/ML • Python • Backend • DSA
+              </div>
+            </div>
+
+            <div class="currently-tag-card">
+              <div class="tag-badge-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                Building
+              </div>
+              <div class="tag-badge-content">
+                Real-world projects
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MY VISION SECTION (Future Tech Entrepreneur)
+         ========================================== -->
+    <section class="section" id="vision">
+      <div class="container">
+        <div class="vision-showcase reveal-init">
+          <div class="vision-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            My Vision
+          </div>
+
+          <blockquote class="vision-quote-primary">
+            “Technology should not just be learned — it should be used to solve real problems.”
+          </blockquote>
+
+          <div class="vision-quote-secondary">
+            “I want to build meaningful technology products and eventually start my own company.”
+          </div>
+
+          <div class="vision-signature-badge">
+            <span>Er. Hariom Kumar Ray</span>
+            <span>•</span>
+            <span style="color:var(--emerald-400)">Founder Mindset</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         LET'S CONNECT / SOCIAL SECTION
+         ========================================== -->
+    <!-- ==========================================
+         CONNECT WITH ME / SOCIAL PROFILES SECTION
+         ========================================== -->
+    <section class="section" id="connect">
+      <div class="container">
+        <div class="connect-card-box reveal-init">
+          
+          <div class="section-tag" style="margin-bottom:14px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Let's Collaborate
+          </div>
+
+          <h2 class="section-title">Connect With Me</h2>
+          <p class="connect-header-desc">
+            “Have an idea, opportunity or simply want to connect? Feel free to reach out across any of my official profiles.”
+          </p>
+
+          <!-- Profile Photo Identity Card -->
+          <div class="connect-profile-card">
+            <div class="connect-avatar-frame">
+              <img 
+                src="assets/profile.jpg" 
+                alt="Er. Hariom Kumar Ray" 
+                class="connect-avatar-img"
+                onerror="this.src='assets/avatar-placeholder.svg'"
+              >
+              <div class="connect-avatar-glow"></div>
+            </div>
+            <div class="connect-profile-details">
+              <div class="connect-name-row">
+                <span class="connect-name">Er. Hariom Kumar Ray</span>
+                <span class="brand-verified" title="Verified Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="connect-role">Computer Science &amp; Artificial Intelligence Engineer</div>
+              <div class="connect-motto">“Building with Technology. Thinking Beyond Boundaries.”</div>
+            </div>
+          </div>
+
+          <!-- 
+            ============================================================
+            EDITABLE SOCIAL LINKS PLACEHOLDERS:
+            Update URLs easily in the HTML hrefs below or via SOCIAL_CONFIG in js/main.js
+            ============================================================
+          -->
+          <div class="social-grid">
+            
+            <!-- INSTAGRAM -->
+            <!-- PLACEHOLDER: YOUR_INSTAGRAM_URL -->
+            <a 
+              href="https://www.instagram.com/00.hariom_?stkn=MXJ3cHdyM2plcnhoeA==" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-card social-card-instagram"
+              id="linkInstagram"
+              aria-label="Visit Hariom's Instagram Profile"
+            >
+              <div class="social-icon-frame icon-instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="social-meta-info">
+                <span class="social-platform-name">Instagram</span>
+                <span class="social-action-hint">@00.hariom_ • Follow / DM</span>
+              </div>
+              <div class="social-external-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- LINKEDIN -->
+            <!-- PLACEHOLDER: YOUR_LINKEDIN_URL -->
+            <a 
+              href="https://www.linkedin.com/in/hariom-kumar-ray-604155287/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-card social-card-linkedin"
+              id="linkLinkedin"
+              aria-label="Connect with Hariom on LinkedIn"
+            >
+              <div class="social-icon-frame icon-linkedin">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="social-meta-info">
+                <span class="social-platform-name">LinkedIn</span>
+                <span class="social-action-hint">Hariom Kumar Ray • Connect</span>
+              </div>
+              <div class="social-external-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- GITHUB -->
+            <!-- PLACEHOLDER: YOUR_GITHUB_URL -->
+            <a 
+              href="https://github.com/hariomkumar4572" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-card social-card-github"
+              id="linkGithub"
+              aria-label="Check Hariom's GitHub Repositories"
+            >
+              <div class="social-icon-frame icon-github">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="social-meta-info">
+                <span class="social-platform-name">GitHub</span>
+                <span class="social-action-hint">hariomkumar4572 • Projects</span>
+              </div>
+              <div class="social-external-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- FACEBOOK -->
+            <!-- PLACEHOLDER: YOUR_FACEBOOK_URL -->
+            <a 
+              href="https://www.facebook.com/share/1D9sGregto/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-card social-card-facebook"
+              id="linkFacebook"
+              aria-label="Connect with Hariom on Facebook"
+            >
+              <div class="social-icon-frame icon-facebook">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </div>
+              <div class="social-meta-info">
+                <span class="social-platform-name">Facebook</span>
+                <span class="social-action-hint">Hariom Ray • Profile</span>
+              </div>
+              <div class="social-external-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- X / TWITTER -->
+            <!-- PLACEHOLDER: YOUR_TWITTER_URL -->
+            <a 
+              href="https://x.com/hariomr36901853" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-card social-card-twitter"
+              id="linkTwitter"
+              aria-label="Follow Hariom on X / Twitter"
+            >
+              <div class="social-icon-frame icon-twitter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </div>
+              <div class="social-meta-info">
+                <span class="social-platform-name">X / Twitter</span>
+                <span class="social-action-hint">@hariomr36901853 • Follow</span>
+              </div>
+              <div class="social-external-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- EMAIL DIRECT -->
+            <!-- PLACEHOLDER: YOUR_EMAIL -->
+            <a 
+              href="mailto:hariom995522@gmail.com" 
+              class="social-card social-card-email"
+              id="linkEmail"
+              aria-label="Send direct email to Hariom"
+            >
+              <div class="social-icon-frame icon-email">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="social-meta-info">
+                <span class="social-platform-name">Email</span>
+                <span class="social-action-hint">hariom995522@gmail.com</span>
+              </div>
+              <div class="social-external-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Email 1-Click Copy Bar -->
+          <div class="email-copy-bar">
+            <span class="copy-toast" id="copyToast">Email Copied to Clipboard! ✓</span>
+            <div class="email-details-inline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span class="email-display-text" id="emailAddressText">hariom995522@gmail.com</span>
+            </div>
+            <button class="btn-copy-email" id="copyEmailBtn" aria-label="Copy email address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <h3 class="footer-brand-title">Er. Hariom Kumar Ray</h3>
+      <div class="footer-subtitle">Computer Science &amp; Artificial Intelligence Engineer</div>
+      <div class="footer-motto">“Building. Learning. Creating.”</div>
+      <div class="footer-copyright">
+        &copy; <span id="currentYear">2026</span> Er. Hariom Kumar Ray. Designed with modern engineering precision.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================
+       PROJECT DETAILS MODAL (Mushibat Healthcare)
+       ========================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Project Details Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="project-badge-top" style="margin-bottom:12px;">Full Architectural Overview</div>
+      <h2 class="modal-title" id="modalProjectTitle">Mushibat Healthcare</h2>
+      <div class="modal-subtitle">Digital Healthcare Appointment &amp; Queue Elimination System</div>
+
+      <div class="modal-body-section">
+        <div class="modal-section-h">The Core Problem</div>
+        <p style="color:var(--text-secondary); line-height:1.65; font-size:0.95rem;">
+          In traditional hospital setups, patients endure lengthy physical queues, unclear doctor availability schedules, and emergency delays. Mushibat Healthcare was engineered to eliminate unnecessary waiting times by digitizing the complete intake lifecycle.
+        </p>
+      </div>
+
+      <div class="modal-body-section">
+        <div class="modal-section-h">End-to-End Workflow</div>
+        <ul style="color:var(--text-secondary); line-height:1.8; font-size:0.92rem; padding-left:18px; list-style:disc;">
+          <li><strong>Hospital Search:</strong> Patients discover accredited hospitals with real-time department status.</li>
+          <li><strong>Doctor Selection:</strong> Transparent physician profiles, specialties, and consult slots.</li>
+          <li><strong>Appointment Booking:</strong> Real-time reservation with instant confirmation.</li>
+          <li><strong>Patient Details:</strong> Streamlined intake form capturing vitals and prior history.</li>
+          <li><strong>Emergency vs. Normal:</strong> Priority triage queuing to route urgent cases instantly.</li>
+          <li><strong>Digital Token Info:</strong> Digital appointment slip with QR verification for desk check-ins.</li>
+        </ul>
+      </div>
+
+      <div class="modal-body-section">
+        <div class="modal-section-h">Technologies Used</div>
+        <div class="modal-tech-pills">
+          <span class="modal-tech-pill">JavaScript</span>
+          <span class="modal-tech-pill">HTML5 &amp; CSS3</span>
+          <span class="modal-tech-pill">Vite Build Engine</span>
+          <span class="modal-tech-pill">Responsive UI Architecture</span>
+          <span class="modal-tech-pill">Local Storage / State Management</span>
+        </div>
+      </div>
+
+      <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap;">
+        <button class="btn btn-primary" onclick="alert('Project files are stored locally in the workspace under mushibat-healthcare.');" style="padding:10px 20px; font-size:0.9rem;">
+          Launch System Demo
+        </button>
+        <button class="btn btn-secondary" onclick="document.getElementById('closeModalBtn').click();" style="padding:10px 20px; font-size:0.9rem;">
+          Close Overview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
